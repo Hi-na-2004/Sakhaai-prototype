@@ -11,7 +11,6 @@
         <p>Your Confidential Wellness Companion</p>
     </header>
 
-    <!-- Mood Tracker -->
     <section id="mood-tracker">
         <h2>Mood Tracker</h2>
         <p>How are you feeling today?</p>
@@ -25,7 +24,6 @@
         <p id="mood-result"></p>
     </section>
 
-    <!-- Journaling -->
     <section id="journal">
         <h2>Journaling</h2>
         <textarea id="journal-entry" placeholder="Write your thoughts..."></textarea>
@@ -33,26 +31,12 @@
         <p id="journal-result"></p>
     </section>
 
-    <!-- Daily Self-Care / Gamified Micro-Activities -->
     <section id="daily-tasks">
         <h2>Daily Self-Care Tasks</h2>
-        <ul>
-            <li>Take a 5-minute walk</li>
-            <li>Drink a glass of water</li>
-            <li>Write one positive thing today</li>
-        </ul>
-        <button onclick="randomTask()">Complete Random Task</button>
-        <p id="random-task-result"></p>
+        <button onclick="showTask()">Complete Random Task</button>
+        <p id="task-result">Try this now: Take a 5-minute walk</p>
     </section>
 
-    <!-- Progress & Insights -->
-    <section id="progress-insights">
-        <h2>Progress & Insights</h2>
-        <p id="mood-count">Total moods logged: 0</p>
-        <p id="journal-count">Total journal entries: 0</p>
-    </section>
-
-    <!-- AI Guidance -->
     <section id="ai-chat">
         <h2>AI Guidance</h2>
         <input type="text" id="user-message" placeholder="Type how you feel...">
@@ -60,11 +44,9 @@
         <div id="chat-box"></div>
     </section>
 
-    <!-- Professional Help -->
     <section id="professional-help">
-        <h2>Need Professional Help?</h2>
-        <p>If you feel you need immediate support, reach out:</p>
-        <button onclick="window.open('https://www.samaritans.org/', '_blank')">Contact Helpline</button>
+        <h2>Professional Help</h2>
+        <p>If you need help, visit <a href="https://www.samaritans.org" target="_blank">Samaritans</a></p>
     </section>
 
     <footer>
