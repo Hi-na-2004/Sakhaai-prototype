@@ -3,9 +3,7 @@ function logMood(mood) {
     const result = document.getElementById('mood-result');
     result.textContent = `Your mood today: ${mood}`;
     result.style.transform = "scale(1.3)";
-    setTimeout(() => {
-        result.style.transform = "scale(1)";
-    }, 300);
+    setTimeout(() => { result.style.transform = "scale(1)"; }, 300);
 }
 
 // Journaling
@@ -63,3 +61,4 @@ function getAIResponse() {
     document.getElementById('user-message').value = "";
     chatBox.scrollTop = chatBox.scrollHeight;
 }
+

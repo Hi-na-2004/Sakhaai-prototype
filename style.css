@@ -1,6 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
-    background: #f0f8ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f0f8ff, #e6f2ff);
     color: #333;
     text-align: center;
     margin: 0;
@@ -13,13 +13,32 @@ header {
     padding: 20px;
 }
 
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
 section {
     margin: 20px auto;
     padding: 20px;
     background: white;
-    border-radius: 15px; /* rounded corners */
+    border-radius: 15px;
     box-shadow: 0 6px 12px rgba(0,0,0,0.15);
     max-width: 600px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .mood-buttons button {
@@ -75,4 +94,5 @@ button:hover {
     text-align: left;
     background: #eef6fc;
 }
+
 
